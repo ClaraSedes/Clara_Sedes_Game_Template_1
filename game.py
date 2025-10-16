@@ -203,8 +203,8 @@ def move(p_exits, p_direction):
     >>> move(g_rooms["Reception"]["exits"], "west") == g_rooms["Office"]
     False
     """
-    l_identifier = p_exits[p_direction]
-    l_current_room = g_rooms[l_identifier]
+    l_next_room_key = p_exits[p_direction]
+    l_current_room = g_rooms[l_next_room_key]
     return l_current_room
 
 
